@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/custom_background"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:background="@drawable/bg_toolbar"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/Theme.AppCompat.Light">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Ho Van Ngan"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:id="@+id/tvCusName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="22dp">
+            </TextView>
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_logout"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_account"
+                android:id="@+id/img_show_info_click"
+                />
+            <Button
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_logout"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:id="@+id/btnEvent"
+                android:text="Đăng xuất"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_width="50dp"
+                android:layout_height="45dp">
+            </Button>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#E9FFD6">
+            <android.support.v7.widget.CardView
+                android:background="#D31212"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tình trạng đơn hàng"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:background="#54B103"
+                    android:padding="7dp"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_nhandonhang_click"
+                    android:background="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Đã nhận đơn hàng"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                    android:padding="10dp">
+                </TextView>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+                <TextView
+                    android:id="@+id/tv_vanchuyen_click"
+                    android:background="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đang vận chuyển"
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                    android:padding="10dp">
+                </TextView>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+                <TextView
+                    android:id="@+id/tv_huydonhang_click"
+                    android:background="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đơn hàng đã hủy"
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                    android:padding="10dp">
+                </TextView>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:id="@+id/tv_thanhcong_click"
+                    android:background="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đơn hàng thành công"
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                    android:padding="10dp">
+                </TextView>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

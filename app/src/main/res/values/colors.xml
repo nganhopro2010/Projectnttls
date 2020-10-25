@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#689F38</color>
+    <color name="colorToolbar" tools:ignore="ReferenceType">@drawable/circle</color>
+    <color name="colorPrimaryDark">#3E9C43</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorblack">#000000</color>
+
+</resources>
